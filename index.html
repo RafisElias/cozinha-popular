@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozinhapopular</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform ease-in-out 200ms;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      padding-block: 1rem;
+    }
+
+    img:hover{
+        transform: scale(1.3);
+    }
+
+    .container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      width: min(1000px, 100%);
+      margin: auto;
+      justify-content: center;
+    }
+
+    .item {
+      border: 1px solid black;
+      border-radius: 10px;
+      width: min(250px, 100%);
+      overflow: hidden;
+      padding: 16px;
+    }
+
+    .item>*+* {
+      margin-top: 16px;
+    }
+
+    header,
+    footer {
+      padding: 32px;
+      background-color: black;
+      color: white;
+    }
+
+    .img-container{
+        overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cozina Popular</h1>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="item">
+        <div class="img-container">
+          <img src="./imagens/escondidinho.jpg" alt="">
+        </div>
+        <h2>Escondidinho</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem?</p>
+      </div>
+      <div class="item">
+        <div class="img-container">
+          <img src="./imagens/feijoada.jpg" alt="">
+        </div>
+        <h2>Feijoada</h2>
+        <p>Lorem ipsum dolor sit amet consecteturadipisicing elit. Est, delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, delectus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem?</p>
+      </div>
+      <div class="item">
+        <div class="img-container">
+          <img src="./imagens/lasanha.jpg" alt="">
+        </div>
+
+        <h2>Lasanha</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem?</p>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
